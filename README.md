@@ -1,2 +1,7 @@
-# ai-school-redesign
-This user interface presents a clean and intuitive landing page for the AI Ready School platform, showcasing its AI-powered tools designed for students, teachers, and school administrators. It highlights key products, teacher testimonials, and an easy demo scheduling feature to help schools quickly understand and adopt AI solutions.
+## Audit Findings
+
+- Too many options in the navigation, so it feels confusing what to click.
+- Too much to scroll
+- Main book demo is at bottom
+- The main section (top part) is not very clear and has too much text.
+-The FAQ section is placed in the middle and is too long, which breaks the flow of the page.
