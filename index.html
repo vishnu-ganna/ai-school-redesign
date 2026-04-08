@@ -1,95 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>AI School Redesign</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<title>AI Ready School</title>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="font-sans">
+<body class="font-sans text-gray-800">
 
-<!-- Navbar -->
-<nav class="flex justify-between items-center p-5 shadow-md">
-  <h1 class="text-xl font-bold">AI School</h1>
+<!-- NAVBAR -->
+<nav class="flex justify-between items-center px-10 py-5 bg-white shadow-sm sticky top-0">
 
-  <div class="space-x-6 hidden md:block">
-    <a href="#">Products</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </div>
+<h1 class="text-xl font-bold text-pink-600">AI Ready</h1>
 
-  <button class="bg-blue-600 text-white px-4 py-2 rounded">
-    Book Demo
-  </button>
+<div class="hidden md:flex space-x-6 text-sm">
+<a href="#products">AI Products</a>
+<a href="#faq">FAQ</a>
+<a href="#schedule">Schedule</a>
+</div>
+
+<div class="flex gap-3">
+
+<button onclick="openSignup()" class="border px-4 py-2 rounded hover:bg-gray-200">
+Sign Up
+</button>
+
+<a href="#schedule">
+<button class="bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600">
+Book Demo
+</button>
+</a>
+
+</div>
+
 </nav>
 
-<!-- Hero Section -->
-<section class="text-center py-20 px-4">
-  <h1 class="text-4xl md:text-5xl font-bold">
-    Bring AI into Your School Easily
-  </h1>
+<!-- HERO -->
+<section class="text-center py-24 px-6 bg-gray-50">
 
-  <p class="mt-4 text-gray-600 max-w-xl mx-auto">
-    Simple AI tools for students and teachers to improve learning and teaching.
-  </p>
+<h1 class="text-5xl font-bold leading-tight">
+A Complete AI Ecosystem <br> For K–12 Schools
+</h1>
 
-  <div class="mt-6 flex justify-center gap-4">
-    <button class="bg-blue-600 text-white px-6 py-2 rounded">
-      Book Demo
-    </button>
+<p class="mt-6 max-w-2xl mx-auto text-gray-600">
+Empower your school with AI-powered tools designed for students, teachers, and administrators.
+</p>
 
-    <button class="border px-6 py-2 rounded">
-      Learn More
-    </button>
-  </div>
+<a href="#schedule">
+<button class="mt-8 bg-pink-500 text-white px-6 py-3 rounded">
+Book Demo
+</button>
+</a>
+
 </section>
 
-<!-- Product Section -->
-<section class="px-6 py-12">
-  <h2 class="text-2xl font-bold text-center mb-8">
-    Our Products
-  </h2>
+<!-- PRODUCTS -->
+<section id="products" class="px-10 py-20 space-y-24">
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- MORPHEUS -->
+<div class="flex flex-col md:flex-row items-center gap-10">
 
-    <div class="p-6 shadow rounded text-center">
-      <h3 class="font-bold">Cypher</h3>
-      <p class="text-sm text-gray-600">AI learning assistant for students</p>
-    </div>
+<div class="md:w-1/2">
+<h2 class="text-3xl font-bold">Morpheus</h2>
+<p class="mt-4 text-gray-600">
+AI assistant that helps teachers plan lessons, create content, and manage classrooms efficiently.
+</p>
+<button class="mt-6 border px-5 py-2 rounded">Explore</button>
+</div>
 
-    <div class="p-6 shadow rounded text-center">
-      <h3 class="font-bold">Morpheus</h3>
-      <p class="text-sm text-gray-600">AI teaching support</p>
-    </div>
+<img src="https://images.unsplash.com/photo-1588072432836-e10032774350"
+class="rounded-lg md:w-1/2">
 
-    <div class="p-6 shadow rounded text-center">
-      <h3 class="font-bold">Zion</h3>
-      <p class="text-sm text-gray-600">AI tools for schools</p>
-    </div>
+</div>
 
-    <div class="p-6 shadow rounded text-center">
-      <h3 class="font-bold">NEO</h3>
-      <p class="text-sm text-gray-600">Innovation lab for students</p>
-    </div>
+<!-- ZION -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-10">
 
-    <div class="p-6 shadow rounded text-center">
-      <h3 class="font-bold">Matrix</h3>
-      <p class="text-sm text-gray-600">AI infrastructure</p>
-    </div>
+<div class="md:w-1/2">
+<h2 class="text-3xl font-bold">Zion</h2>
+<p class="mt-4 text-gray-600">
+Manage operations, automate workflows, and improve efficiency using AI.
+</p>
+<button class="mt-6 border px-5 py-2 rounded">Explore</button>
+</div>
 
-  </div>
+<img src="https://images.unsplash.com/photo-1551434678-e076c223a692"
+class="rounded-lg md:w-1/2">
+
+</div>
+
+<!-- NEO -->
+<div class="flex flex-col md:flex-row items-center gap-10">
+
+<div class="md:w-1/2">
+<h2 class="text-3xl font-bold">NEO</h2>
+<p class="mt-4 text-gray-600">
+A student innovation platform to build real-world AI skills.
+</p>
+<button class="mt-6 border px-5 py-2 rounded">Explore</button>
+</div>
+
+<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7"
+class="rounded-lg md:w-1/2">
+
+</div>
+
+<!-- MATRIX -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-10">
+
+<div class="md:w-1/2">
+<h2 class="text-3xl font-bold">Matrix</h2>
+<p class="mt-4 text-gray-600">
+Powerful infrastructure to run and manage AI systems across the institution.
+</p>
+<button class="mt-6 border px-5 py-2 rounded">Explore</button>
+</div>
+
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+class="rounded-lg md:w-1/2">
+
+</div>
+
 </section>
 
-<!-- Final CTA -->
-<section class="text-center py-16">
-  <h2 class="text-2xl font-bold">
-    Start your AI journey today
-  </h2>
+<!-- FAQ -->
+<section id="faq" class="px-10 py-20 bg-gray-50">
 
-  <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded">
-    Book a Demo
-  </button>
+<h2 class="text-3xl font-bold mb-10 text-center">
+Frequently Asked Questions
+</h2>
+
+<div class="max-w-3xl mx-auto space-y-6 text-gray-700">
+
+<p>
+<strong>What is AI Ready School?</strong><br>
+It is a platform that brings AI tools to schools.
+</p>
+
+<p>
+<strong>Who can use it?</strong><br>
+Students, teachers, and administrators.
+</p>
+
+<p>
+<strong>Is it safe?</strong><br>
+Yes, it is designed for educational environments.
+</p>
+
+<p>
+<strong>How to start?</strong><br>
+You can book a demo to learn more.
+</p>
+
+<p>
+<strong>Does it require training?</strong><br>
+Basic onboarding is provided.
+</p>
+
+<p>
+<strong>Can it scale?</strong><br>
+Yes, it works for small and large schools.
+</p>
+
+</div>
+
 </section>
+
+<!-- TESTIMONIAL -->
+<section class="px-10 py-20 bg-white">
+
+<h2 class="text-3xl font-bold text-center mb-12">
+What Teachers Are Saying
+</h2>
+
+<div class="max-w-4xl mx-auto bg-gray-50 p-10 rounded-xl shadow">
+
+<p class="text-lg text-gray-700 leading-relaxed">
+"The AI-Ready School App is a game-changer. It simplifies routine tasks like generating worksheets,
+lesson plans, and assignments, while also helping us create engaging content—images, videos,
+and presentations—that make complex topics easier to teach. It’s a huge relief for educators
+juggling multiple responsibilities."
+</p>
+
+<div class="mt-6 flex items-center gap-4">
+
+<img src="/mnt/data/691452d9ff657da1197e7698_t1.png"
+class="w-16 h-16 rounded-full object-cover">
+
+<div>
+<h4 class="font-bold">Mansi Sharma</h4>
+<p class="text-sm text-gray-500">
+TGT English Teacher<br>
+NH Goel World School, Raipur, Chhattisgarh
+</p>
+</div>
+
+</div>
+
+<p class="mt-6 text-pink-600 font-semibold">
+Best Solution for Busy teachers!
+</p>
+
+<p class="text-gray-600 mt-2">
+The AI-Ready School App helped Mansi streamline her daily workload
+and create engaging, student-friendly materials.
+</p>
+
+</div>
+
+</section>
+
+<!-- SCHEDULE CALL -->
+<section id="schedule" class="px-10 py-20 text-center bg-gray-50">
+
+<h2 class="text-3xl font-bold mb-6">
+Schedule a Demo Call
+</h2>
+
+<p class="text-gray-600 mb-10">
+Book a call with our AI education specialists.
+</p>
+
+<div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow">
+
+<label class="block text-left mb-2">Select Date</label>
+<input type="date" class="w-full border p-2 mb-4 rounded">
+
+<label class="block text-left mb-2">Select Time</label>
+<input type="time" class="w-full border p-2 mb-4 rounded">
+
+<button class="w-full bg-pink-500 text-white py-3 rounded">
+Schedule Call
+</button>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gradient-to-r from-purple-800 to-pink-600 text-white py-16 text-center">
+
+<h1 class="text-4xl font-bold opacity-80">
+AI READY
+</h1>
+
+<p class="mt-4 text-sm">
+Building the future of education with AI
+</p>
+
+</footer>
+
+<!-- SIGNUP MODAL -->
+<div id="signupModal" class="fixed inset-0 bg-black bg-opacity-40 hidden flex items-center justify-center">
+
+<div class="bg-white p-8 rounded-lg w-96">
+
+<h2 class="text-2xl font-bold mb-4">Create Account</h2>
+
+<input type="email" placeholder="Email"
+class="w-full border p-2 mb-3 rounded">
+
+<input type="password" placeholder="Password"
+class="w-full border p-2 mb-4 rounded">
+
+<button class="w-full bg-pink-500 text-white py-2 rounded">
+Sign Up
+</button>
+
+<button onclick="closeSignup()" class="mt-3 text-gray-500 text-sm">
+Cancel
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+function openSignup(){
+document.getElementById("signupModal").classList.remove("hidden");
+}
+
+function closeSignup(){
+document.getElementById("signupModal").classList.add("hidden");
+}
+
+</script>
 
 </body>
 </html>
